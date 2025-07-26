@@ -6,7 +6,7 @@
 > 爱丽丝才不是魔王，是勇者！
 
 <div align="center">
-  <img src="arisu.png" width="1920" alt="Arisu">
+  <img src="arisu.png" width="1280" alt="Arisu">
   <br>
   <em>图源: <a href="https://www.pixiv.net/artworks/108461210">Pixiv @殘夜 ZANYA</a></em>
 </div>
@@ -16,7 +16,7 @@
 本项目是一个为RCJ足球重量组（Open）场景，基于3万+张图片的数据集训练的YOLOv8s模型。可以高鲁棒性，定位场地中的高尔夫球或是敌方/我方机器底盘。
 
 <div align="center">
-  <img src="example.jpg" width="1920" alt="Example">
+  <img src="example.jpg" width="720" alt="Example">
   <br>
 </div>
 
