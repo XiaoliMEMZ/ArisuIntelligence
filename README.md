@@ -102,6 +102,8 @@ with VDevice(params) as vdevice:
         # Run synchronous inference and access the output buffers
         configured_infer_model.run([bindings], timeout_ms)
         buffer = bindings.output().get_buffer()
+
+        print(buffer)
 ```
 
 
