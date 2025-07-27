@@ -32,14 +32,14 @@
 
 ### Python+YOLO推理
 
-1. **克隆仓库**
+1. 克隆仓库
 
-2. **安装Ultralytics相关依赖库**
+2. 安装Ultralytics相关依赖库
 ```bash
 pip install -y ultralytics
 ```
 
-3. **执行下列程序开始推理**
+3. 执行下列程序开始推理
 
 ```python
 from ultralytics import YOLO
@@ -65,14 +65,14 @@ for result in results:
 
 ### 树莓派上使用Python+Hailo推理
 
-1. **克隆仓库**
+1. 克隆仓库
 
-2. **安装树莓派Hailo依赖包**
+2. 安装树莓派Hailo依赖包
 ```bash
 apt install -y hailo-all
 ```
 
-3. **执行下列程序开始推理**
+3. 执行下列程序开始推理
 ```python
 import numpy as np
 from hailo_platform import VDevice, HailoSchedulingAlgorithm
@@ -93,6 +93,7 @@ with VDevice(params) as vdevice:
         bindings = configured_infer_model.create_bindings()
 
         # Set input and output buffers
+        # 此处替换为输入图像
         buffer = np.empty(infer_model.input().shape).astype(np.uint8)
         bindings.input().set_buffer(buffer)
 
